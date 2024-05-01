@@ -42,10 +42,10 @@ pipeline {
          stage('Deploy to Nexus') {
                     steps {
                         // Étape de déploiement vers Nexus en sautant les tests
-                        sh 'mvn deploy -DskipTests'
+                        sh 'mvn deploy -X -DskipTests'
                     }
                 }
-            
+
 
 
     }
